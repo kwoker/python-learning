@@ -54,13 +54,42 @@ test1/
 │       └── ragflow-integration.py        # RAGFlow 集成
 │
 ├── 📂 projects/                           # 🚀 实战项目
-│   └── document-qa-system/               # 文档问答系统
-│       ├── main.py                       # 主程序
-│       ├── README.md                     # 项目文档
-│       ├── requirements.txt              # 依赖列表
-│       └── data/knowledge/               # 示例知识库
-│           ├── python-guide.txt          # Python 教程
-│           └── ml-basics.txt             # 机器学习基础
+│   ├── document-qa-system/               # 文档问答系统（LLM应用）
+│   │   ├── main.py                       # 主程序
+│   │   ├── README.md                     # 项目文档
+│   │   ├── requirements.txt              # 依赖列表
+│   │   └── data/knowledge/               # 示例知识库
+│   │       ├── python-guide.txt          # Python 教程
+│   │       └── ml-basics.txt             # 机器学习基础
+│   │
+│   ├── data-science/                     # 📊 数据科学
+│   │   └── pandas-guide/                 # Pandas 数据分析指南
+│   │       ├── 01_data_loading.py        # 数据加载
+│   │       ├── 02_data_cleaning.py       # 数据清洗
+│   │       ├── 03_data_analysis.py       # 数据分析
+│   │       ├── 04_data_visualization.py  # 数据可视化
+│   │       ├── README.md                 # 项目文档
+│   │       └── requirements.txt          # 依赖列表
+│   │
+│   ├── web-development/                  # 🌐 Web 开发
+│   │   └── fastapi-rest-api/             # FastAPI REST API
+│   │       ├── app/                      # 应用代码
+│   │       │   ├── main.py               # FastAPI 应用
+│   │       │   ├── core/                 # 核心配置
+│   │       │   ├── api/                  # API 路由
+│   │       │   ├── models/               # 数据模型
+│   │       │   ├── services/             # 业务逻辑
+│   │       │   └── schemas/              # Pydantic 模式
+│   │       ├── test_api.py               # API 测试
+│   │       ├── README.md                 # 项目文档
+│   │       └── requirements.txt          # 依赖列表
+│   │
+│   └── automation/                       # 🤖 自动化
+│       └── web-scraping/                 # 网络爬虫
+│           ├── 01_basic_scraper.py       # 基础爬虫
+│           ├── 02_advanced_scraper.py    # 高级爬虫
+│           ├── README.md                 # 项目文档
+│           └── requirements.txt          # 依赖列表
 │
 ├── 📂 exercises/                          # 💻 练习题
 │   └── exercise1.py                      # 基础练习
@@ -129,18 +158,37 @@ python examples/advanced/decorators.py
 #### 🌳 已有 Python 基础的学习者
 
 ```bash
-# 1. 直接学习 LLM 应用开发
+# 选择一个方向深入学习：
+
+# 📊 方向 1: 数据科学
+pip install pandas numpy matplotlib seaborn scipy
+cd projects/data-science/pandas-guide
+python 01_data_loading.py
+python 02_data_cleaning.py
+python 03_data_analysis.py
+python 04_data_visualization.py
+
+# 🌐 方向 2: Web 开发
+pip install fastapi uvicorn
+cd ../../web-development/fastapi-rest-api
+python -m uvicorn app.main:app --reload
+# 访问 http://localhost:8000/docs 查看 API 文档
+
+# 🤖 方向 3: 网络爬虫
+pip install requests beautifulsoup4 lxml
+cd ../../automation/web-scraping
+python 01_basic_scraper.py
+python 02_advanced_scraper.py
+
+# 🧠 方向 4: LLM 应用开发
 pip install langchain langchain-openai langchain-community chromadb
-
-# 2. 设置 API 密钥
 export OPENAI_API_KEY="your-api-key"
+cd ../../examples/llm
+python langchain-basics.py
+python langchain-rag-examples.py
 
-# 3. 运行 LLM 示例
-python examples/llm/langchain-basics.py
-python examples/llm/langchain-rag-examples.py
-
-# 4. 完成实战项目
-cd projects/document-qa-system
+# 🎯 完成综合实战项目
+cd ../../projects/document-qa-system
 python main.py
 ```
 
@@ -194,7 +242,7 @@ python main.py
 
 ### 第四阶段：实战项目（2-3周）
 
-#### 项目：文档问答系统
+#### 项目 1: 文档问答系统（LLM 应用）
 
 **功能特性：**
 - 📄 支持多种文档格式（PDF、TXT、DOCX）
@@ -212,7 +260,71 @@ python main.py
 #### 项目资源
 - 📁 `projects/document-qa-system/` - 完整项目代码
 - 📝 `projects/document-qa-system/README.md` - 详细文档
-- 📊 `data/knowledge/` - 示例知识库
+
+### 第五阶段：专业方向实战（3-4周）
+
+#### 项目 2: 数据科学分析（数据科学方向）
+
+**学习内容：**
+- 📊 数据加载（CSV、Excel、JSON）
+- 🧹 数据清洗（缺失值、重复值、异常值）
+- 📈 数据分析（统计、分组、聚合）
+- 📉 数据可视化（Matplotlib、Seaborn）
+
+**实战价值：**
+- 💼 掌握数据科学工作流
+- 📊 学会商业数据分析
+- 🎨 创建专业数据图表
+- 🔍 挖掘数据价值
+
+#### 项目资源
+- 📁 `projects/data-science/pandas-guide/` - 完整学习项目
+- 📝 `README.md` - 详细教程
+- 📝 `01_data_loading.py` - 数据加载
+- 📝 `02_data_cleaning.py` - 数据清洗
+- 📝 `03_data_analysis.py` - 数据分析
+- 📝 `04_data_visualization.py` - 数据可视化
+
+#### 项目 3: REST API 服务（Web 开发方向）
+
+**学习内容：**
+- 🚀 FastAPI 框架使用
+- 🔌 RESTful API 设计
+- ✅ 数据验证（Pydantic）
+- 📚 自动 API 文档
+- 🧪 API 测试
+
+**实战价值：**
+- 🌐 构建 Web API 服务
+- 💻 学习微服务架构
+- 🔐 掌握 API 安全
+- 📖 生成专业 API 文档
+
+#### 项目资源
+- 📁 `projects/web-development/fastapi-rest-api/` - 完整项目
+- 📝 `README.md` - 详细教程
+- 📝 `test_api.py` - API 测试脚本
+
+#### 项目 4: 网络爬虫系统（自动化方向）
+
+**学习内容：**
+- 🕷️ 基础网页爬取（requests + BeautifulSoup）
+- 🔧 高级爬虫技术（Scrapy、Selenium）
+- ⚡ 异步爬虫（aiohttp）
+- 🛡️ 反反爬策略
+- 💾 数据存储和处理
+
+**实战价值：**
+- 🤖 自动化数据收集
+- 📊 构建数据采集系统
+- 🔍 网络数据挖掘
+- 💼 商业情报收集
+
+#### 项目资源
+- 📁 `projects/automation/web-scraping/` - 完整项目
+- 📝 `README.md` - 详细教程
+- 📝 `01_basic_scraper.py` - 基础爬虫
+- 📝 `02_advanced_scraper.py` - 高级爬虫
 
 ## 📖 详细学习指南
 
@@ -241,6 +353,7 @@ python main.py
 ## ⚡ 常用命令
 
 ```bash
+# ==================== Python 基础示例 ====================
 # 运行基础示例
 python examples/basics/hello_world.py
 python examples/basics/variables.py
@@ -251,16 +364,43 @@ python examples/oop/basic_class.py
 python examples/modules/file_operations.py
 python examples/advanced/decorators.py
 
+# ==================== LLM 应用开发 ====================
 # 运行 LLM 示例
 python examples/llm/langchain-basics.py
 python examples/llm/langchain-rag-examples.py
 python examples/llm/ragflow-integration.py
 
-# 运行实战项目
-cd projects/document-qa-system
+# ==================== 数据科学项目 ====================
+# 数据科学项目
+cd projects/data-science/pandas-guide
+python 01_data_loading.py      # 数据加载
+python 02_data_cleaning.py     # 数据清洗
+python 03_data_analysis.py     # 数据分析
+python 04_data_visualization.py # 数据可视化
+
+# ==================== Web 开发项目 ====================
+# FastAPI 项目
+cd ../../web-development/fastapi-rest-api
+python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+# 访问 http://localhost:8000/docs 查看 API 文档
+
+# 测试 API
+python test_api.py
+
+# ==================== 网络爬虫项目 ====================
+# 网络爬虫
+cd ../../automation/web-scraping
+python 01_basic_scraper.py     # 基础爬虫
+python 02_advanced_scraper.py  # 高级爬虫
+
+# ==================== LLM 实战项目 ====================
+# 文档问答系统
+cd ../../projects/document-qa-system
 python main.py
 
+# ==================== 练习题 ====================
 # 运行练习题
+cd ../../
 python exercises/exercise1.py
 ```
 
@@ -271,15 +411,27 @@ python exercises/exercise1.py
 - **面向对象**: 类、继承、多态、封装
 - **高级特性**: 装饰器、生成器、迭代器、异步编程
 
-### Web 开发（可选扩展）
-- Flask/FastAPI 框架
-- RESTful API 设计
+### 📊 数据科学
+- **Pandas**: 数据处理和分析
+- **NumPy**: 数值计算
+- **Matplotlib**: 基础绘图
+- **Seaborn**: 统计数据可视化
+- **SciPy**: 科学计算和统计分析
 
-### 数据处理
-- Pandas、NumPy 数据操作
-- 数据可视化（Matplotlib、Seaborn）
+### 🌐 Web 开发
+- **FastAPI**: 现代化 Web 框架
+- **Uvicorn**: ASGI 服务器
+- **Pydantic**: 数据验证和序列化
+- **RESTful API**: 最佳实践和设计原则
 
-### LLM 应用开发
+### 🤖 自动化与爬虫
+- **Requests**: HTTP 请求库
+- **BeautifulSoup**: HTML 解析
+- **Scrapy**: 专业爬虫框架
+- **Selenium**: 浏览器自动化
+- **aiohttp**: 异步 HTTP 客户端
+
+### 🧠 LLM 应用开发
 - **LangChain 框架**: 核心组件、Chains、Memory、RetrievalQA
 - **RAGFlow 引擎**: 部署、API 集成、知识库管理
 - **向量数据库**: Chroma、FAISS、嵌入模型
@@ -306,9 +458,28 @@ python exercises/exercise1.py
 - [ ] 能够调用 OpenAI API
 - [ ] 构建简单的问答系统
 
-### 实战阶段 ✅
+### 数据科学阶段
+- [ ] 完成所有 Pandas 示例
+- [ ] 掌握数据加载和清洗
+- [ ] 学会数据分析和可视化
+- [ ] 能够独立完成数据分析项目
+
+### Web 开发阶段
+- [ ] 理解 RESTful API 设计
+- [ ] 能够构建 FastAPI 应用
+- [ ] 掌握数据验证和错误处理
+- [ ] 完成 API 文档编写
+
+### 自动化阶段
+- [ ] 掌握基础爬虫技术
+- [ ] 理解反反爬策略
+- [ ] 能够处理动态网页
+- [ ] 构建数据采集系统
+
+### 综合实战阶段
 - [ ] 成功运行文档问答系统
-- [ ] 添加自己的文档
+- [ ] 完成至少一个专业方向项目（数据科学/Web/爬虫）
+- [ ] 添加自己的文档/数据
 - [ ] 理解系统架构
 - [ ] 能够扩展功能
 

@@ -126,6 +126,116 @@
 - 代码文档助手
 - 学术论文问答系统
 
+### 阶段六：专业方向深化（2-3周）
+
+**目标**：选择一个方向深入学习，掌握专业技能
+
+#### 方向 A: 数据科学
+
+**学习资源**：
+- `projects/data-science/pandas-guide/` - Pandas 完整教程
+- `01_data_loading.py` - 数据加载（CSV、Excel、JSON）
+- `02_data_cleaning.py` - 数据清洗（缺失值、重复值、异常值）
+- `03_data_analysis.py` - 数据分析（统计、分组、聚合）
+- `04_data_visualization.py` - 数据可视化（Matplotlib、Seaborn）
+
+**学习内容**：
+1. Pandas 数据处理
+   - DataFrame 操作
+   - 数据筛选和排序
+   - 分组聚合
+   - 数据合并
+
+2. 数据可视化
+   - Matplotlib 基础绘图
+   - Seaborn 统计图表
+   - 交互式图表（Plotly）
+
+3. 数据分析实战
+   - 商业数据分析
+   - 时间序列分析
+   - 统计建模
+
+**实践项目**：
+- 电商销售数据分析
+- 用户行为分析
+- 股票数据分析
+
+#### 方向 B: Web 开发
+
+**学习资源**：
+- `projects/web-development/fastapi-rest-api/` - FastAPI 项目
+- `app/main.py` - FastAPI 应用
+- `test_api.py` - API 测试
+
+**学习内容**：
+1. FastAPI 框架
+   - 路由和参数
+   - 请求体验证
+   - 依赖注入
+   - 中间件
+
+2. API 设计
+   - RESTful 最佳实践
+   - 错误处理
+   - 分页和筛选
+   - API 文档
+
+3. 数据库集成
+   - SQLAlchemy ORM
+   - 异步数据库操作
+   - 事务管理
+
+**实践项目**：
+- 任务管理系统 API
+- 用户管理系统
+- 博客系统后端
+
+#### 方向 C: 网络爬虫与自动化
+
+**学习资源**：
+- `projects/automation/web-scraping/` - 爬虫项目
+- `01_basic_scraper.py` - 基础爬虫
+- `02_advanced_scraper.py` - 高级爬虫
+
+**学习内容**：
+1. 基础爬虫
+   - requests + BeautifulSoup
+   - CSS 选择器
+   - 数据提取和存储
+
+2. 高级爬虫
+   - Scrapy 框架
+   - Selenium 自动化
+   - 异步爬虫
+
+3. 反反爬
+   - 请求伪装
+   - 代理轮换
+   - 验证码处理
+
+**实践项目**：
+- 新闻聚合器
+- 商品价格监控
+- 招聘数据分析
+
+## 学习路径推荐
+
+### 零基础学习者
+```
+阶段一 → 阶段二 → 阶段三 → 阶段四 → 阶段五
+```
+
+### 有 Python 基础的学习者
+```
+阶段二 → 阶段三 → 阶段四 → 阶段五 → 阶段六（选择方向）
+```
+
+### 有其他语言经验的学习者
+```
+阶段一 → 阶段二 → 阶段六（选择方向）→ 阶段三 → 阶段四 → 阶段五
+```
+
 ## LangChain vs RAGFlow 对比
 
 | 特性 | LangChain | RAGFlow |

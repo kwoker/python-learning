@@ -1,0 +1,41 @@
+# 基础爬虫依赖
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# HTML 解析增强
+html5lib>=1.1
+
+# 高级爬虫依赖（可选）
+scrapy>=2.11.0
+
+# Selenium 依赖（可选）
+selenium>=4.15.0
+webdriver-manager>=4.0.0  # 自动管理浏览器驱动
+
+# 异步爬虫依赖（可选）
+aiohttp>=3.9.0
+aiofiles>=23.0.0
+asyncio-throttle>=1.0.0
+
+# 数据处理
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 图像处理（验证码识别）
+Pillow>=10.0.0
+pytesseract>=0.3.10
+
+# 工具库
+fake-useragent>=1.4.0  # 随机 User-Agent
+cloudscraper>=1.2.71   # 反 Cloudflare 防护
+urllib3>=2.0.0
+
+# 数据存储
+pymongo>=4.6.0         # MongoDB
+redis>=5.0.0           # Redis
+
+# 开发和测试
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
