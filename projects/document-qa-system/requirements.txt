@@ -1,0 +1,29 @@
+# LangChain 核心
+langchain>=0.1.0
+langchain-openai>=0.0.5
+langchain-community>=0.0.10
+
+# 向量数据库
+chromadb>=0.4.0
+
+# 文档加载器
+langchain-core>=0.1.0
+
+# PDF 处理
+pypdf>=3.0.0
+
+# Word 文档处理
+python-docx>=0.8.11
+
+# 网页内容提取
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# 可选：Web 框架
+# flask>=2.3.0
+# fastapi>=0.100.0
+# uvicorn>=0.23.0
+
+# 开发工具
+pytest>=7.0.0
+black>=23.0.0
