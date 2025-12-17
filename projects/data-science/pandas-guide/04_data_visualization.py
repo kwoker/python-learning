@@ -255,8 +255,9 @@ def subplots_layout():
     ax2.set_title('季度占比')
 
     ax3 = fig.add_subplot(gs[1, 1])
-    ax3.bar(data['region'], [1000, 1500, 1200])
-    ax3.set_title('地区销售额')
+    region_counts = data['region'].value_counts()
+    ax3.bar(region_counts.index, region_counts.values)
+    ax3.set_title('地区分布')
     ax3.tick_params(axis='x', rotation=45)
 
     ax4 = fig.add_subplot(gs[1, 2])

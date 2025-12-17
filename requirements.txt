@@ -3,6 +3,20 @@ requests>=2.31.0
 numpy>=1.24.0
 pandas>=2.0.0
 
+# 数据科学
+matplotlib>=3.7.0       # 数据可视化
+seaborn>=0.12.0         # 统计数据可视化
+scipy>=1.10.0           # 科学计算
+openpyxl>=3.1.0         # Excel 文件支持
+pyarrow>=12.0.0         # Parquet 格式支持
+xlrd>=2.0.0             # 老版本 Excel 支持
+
+# 网络爬虫
+beautifulsoup4>=4.12.0  # HTML 解析
+lxml>=4.9.0             # XML/HTML 解析器
+aiohttp>=3.9.0          # 异步 HTTP 客户端
+aiofiles>=23.0.0        # 异步文件操作
+
 # 开发工具
 pytest>=7.0.0
 black>=23.0.0
@@ -10,7 +24,9 @@ flake8>=6.0.0
 
 # 可选依赖（根据需要安装）
 # flask>=2.3.0          # Web 开发
-# matplotlib>=3.7.0     # 数据可视化
-# seaborn>=0.12.0       # 统计数据可视化
 # scikit-learn>=1.3.0   # 机器学习
 # jupyter>=1.0.0        # Jupyter Notebook
+# fastapi>=0.104.0      # Web 框架
+# uvicorn>=0.24.0       # ASGI 服务器
+# langchain>=0.1.0      # LLM 应用开发
+# chromadb>=0.4.0       # 向量数据库

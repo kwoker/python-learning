@@ -283,8 +283,8 @@ def data_cleaning_example():
             "title": item["title"].strip(),
             # 清理价格（统一格式，去除符号）
             "price_numeric": int(item["price"].replace("¥", "").replace("￥", "").replace(",", "")),
-            # 清理评分（提取数字）
-            "rating_numeric": float(item["rating"].replace("/5", "").strip())
+            # 清理评分（提取数字，处理 "4.6 / 5" 和 "4.8/5" 格式）
+            "rating_numeric": float(item["rating"].split('/')[0].strip())
         }
         cleaned_data.append(cleaned_item)
 

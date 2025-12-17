@@ -44,7 +44,8 @@
 ### 安装依赖
 
 ```bash
-pip install pandas numpy matplotlib seaborn scipy
+# 安装数据科学相关依赖
+pip install -r requirements.txt
 ```
 
 ### 运行示例

@@ -161,7 +161,7 @@ python examples/advanced/decorators.py
 # 选择一个方向深入学习：
 
 # 📊 方向 1: 数据科学
-pip install pandas numpy matplotlib seaborn scipy
+pip install -r requirements.txt  # 安装所有必需依赖
 cd projects/data-science/pandas-guide
 python 01_data_loading.py
 python 02_data_cleaning.py
@@ -175,7 +175,7 @@ python -m uvicorn app.main:app --reload
 # 访问 http://localhost:8000/docs 查看 API 文档
 
 # 🤖 方向 3: 网络爬虫
-pip install requests beautifulsoup4 lxml
+pip install -r requirements.txt  # 安装所有必需依赖（包括异步爬虫支持）
 cd ../../automation/web-scraping
 python 01_basic_scraper.py
 python 02_advanced_scraper.py

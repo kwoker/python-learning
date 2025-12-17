@@ -112,7 +112,7 @@ def scrape_news_list():
                 "id": news["id"],
                 "title": news["title"],
                 "body": news["body"],
-                "user_id": news["user_id"]
+                "user_id": news["userId"]  # API 返回的是 userId
             }
             news_data.append(news_item)
 
