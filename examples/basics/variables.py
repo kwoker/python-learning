@@ -10,7 +10,7 @@ def main():
     """演示各种数据类型"""
     # 数字类型
     print("=== 数字类型 ===")
-    integer_num = 4269
+    integer_num = 4299
     float_num = 3.14159
     complex_num = 3 + 4j
 
